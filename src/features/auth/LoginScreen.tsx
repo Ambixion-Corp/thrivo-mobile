@@ -1,15 +1,28 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, SafeAreaView, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, SafeAreaView, KeyboardAvoidingView, Platform, ActivityIndicator } from 'react-native';
 import { useAuthStore } from '../../store/authStore';
 
 export function LoginScreen({ navigation }: any) {
   const { login } = useAuthStore();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleLogin = () => {
-    if (email && password) {
-      login(email, 'founder'); // Defaulting to founder for mock
+  const handleLogin = async () => {
+    if (!email || !password) {
+      setError('Please fill in all fields');
+      return;
+    }
+    
+    setIsLoading(true);
+    setError('');
+    try {
+      await login(email, password);
+    } catch (err: any) {
+      setError(err.message || 'Invalid email or password');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -24,6 +37,12 @@ export function LoginScreen({ navigation }: any) {
           <Text className="text-base text-zinc-400">Sign in to continue to Thrivo</Text>
         </View>
 
+        {error ? (
+          <View className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-xl">
+            <Text className="text-red-500 text-sm font-semibold">{error}</Text>
+          </View>
+        ) : null}
+
         <View className="space-y-4">
           <View>
             <Text className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-2">Email Address</Text>
@@ -35,6 +54,7 @@ export function LoginScreen({ navigation }: any) {
               autoCapitalize="none"
               value={email}
               onChangeText={setEmail}
+              editable={!isLoading}
             />
           </View>
           
@@ -47,20 +67,26 @@ export function LoginScreen({ navigation }: any) {
               secureTextEntry
               value={password}
               onChangeText={setPassword}
+              editable={!isLoading}
             />
           </View>
 
           <TouchableOpacity 
             className="w-full bg-[#00C6D8] rounded-xl py-4 mt-8 flex items-center justify-center"
             onPress={handleLogin}
+            disabled={isLoading}
           >
-            <Text className="text-black font-bold text-base">Sign In</Text>
+            {isLoading ? (
+              <ActivityIndicator color="#000" />
+            ) : (
+              <Text className="text-black font-bold text-base">Sign In</Text>
+            )}
           </TouchableOpacity>
         </View>
 
         <View className="mt-8 flex-row justify-center">
           <Text className="text-zinc-500">Don't have an account? </Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Signup')} disabled={isLoading}>
             <Text className="text-white font-bold">Sign Up</Text>
           </TouchableOpacity>
         </View>
