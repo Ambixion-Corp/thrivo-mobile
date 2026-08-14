@@ -12,22 +12,11 @@ request is opened on every merge to update it (see
 
 ## [Unreleased]
 
-### Added
-- Initial project skeleton with Expo SDK 57, React Native 0.86, React 19.2, and
-  TypeScript 7.0.
-- Authentication flow (login + signup screens) backed by JWT stored in MMKV.
-- Discovery feed screen with video-style items and like/unlike actions.
-- Deal-flow / investor matching screen with swipe-to-pass and intro requests.
-- Founder and creator profile screens.
-- Bottom-tab navigation (Feed, Investor, Creator, Profile) with a
-  native-stack root navigator for auth gating.
-- Zustand client state stores (`authStore`, `useAppStore`) with MMKV persistence.
-- React Query integration for server-state fetching and mutations.
-- NativeWind (Tailwind CSS) styling with a custom brand color palette.
-- CI workflow validating TypeScript (`npx tsc --noEmit`) on every pull request.
-
 ### Changed
-- (No prior versions to record.)
+
+- grant write permission to changelog workflow ([#28](https://github.com/Ambixion-Corp/thrivo-mobile/pull/28))
+- fetch full git history so changelog generator can find last CHANGELOG.md commit ([#27](https://github.com/Ambixion-Corp/thrivo-mobile/pull/27))
+- add release process documentation ([#26](https://github.com/Ambixion-Corp/thrivo-mobile/pull/26))
 
 ## [1.0.0] - initial
 
