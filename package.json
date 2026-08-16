@@ -11,7 +11,7 @@
     "@shopify/flash-list": "2.3.2",
     "@tanstack/react-query": "^5.101.4",
     "babel-preset-expo": "~57.0.6",
-    "expo": "~57.0.10",
+    "expo": "~57.0.12",
     "expo-status-bar": "~57.0.1",
     "nativewind": "^4.2.6",
     "react": "19.2.8",
