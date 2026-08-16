@@ -14,9 +14,11 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- grant write permission to changelog workflow ([#28](https://github.com/Ambixion-Corp/thrivo-mobile/pull/28))
-- fetch full git history so changelog generator can find last CHANGELOG.md commit ([#27](https://github.com/Ambixion-Corp/thrivo-mobile/pull/27))
-- add release process documentation ([#26](https://github.com/Ambixion-Corp/thrivo-mobile/pull/26))
+- bump react-native from 0.86.2 to 0.87.0 ([#38](https://github.com/Ambixion-Corp/thrivo-mobile/pull/38))
+- bump @react-navigation/bottom-tabs from 7.18.15 to 7.18.16
+- bump babel-preset-expo from 57.0.5 to 57.0.6
+- bump zustand from 5.0.14 to 5.0.15
+- bump @expo/metro-runtime from 57.0.8 to 57.0.9
 
 ## [1.0.0] - initial
 
