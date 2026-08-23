@@ -14,8 +14,7 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- bump expo from 57.0.10 to 57.0.12
-- bump react-native-screens from 4.26.2 to 4.27.0
+- bump @react-navigation/bottom-tabs from 7.18.16 to 7.18.17
 
 ## [1.0.0] - initial
 
