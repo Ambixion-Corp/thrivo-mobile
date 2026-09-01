@@ -14,14 +14,11 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- bump babel-preset-expo from 57.0.6 to 57.0.7 ([#55](https://github.com/Ambixion-Corp/thrivo-mobile/pull/55))
-- bump react-native-safe-area-context from 5.9.0 to 5.9.1
-- bump react-native-gesture-handler from 3.1.0 to 3.2.1
-- bump expo from 57.0.12 to 57.0.14
-- bump @expo/metro-runtime from 57.0.10 to 57.0.11
-- bump @react-navigation/native-stack from 7.18.8 to 7.18.9
-- bump @react-navigation/native from 7.3.16 to 7.3.17
-- bump @react-navigation/bottom-tabs from 7.18.16 to 7.18.17
+- update package-lock.json
+- bump @react-navigation/bottom-tabs from 7.18.17 to 7.18.18
+- bump react-native from 0.87.0 to 0.87.1
+- bump @react-navigation/native from 7.3.17 to 7.3.18
+- bump react-native-reanimated from 4.5.3 to 4.6.0
 
 ## [1.0.0] - initial
 
