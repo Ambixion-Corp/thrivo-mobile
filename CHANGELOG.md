@@ -14,15 +14,7 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- bump expo from 57.0.14 to 57.0.18
-- bump @tanstack/react-query from 5.101.4 to 5.102.8
-- bump babel-preset-expo from 57.0.7 to 57.0.9
-- bump @react-navigation/native-stack from 7.18.9 to 7.18.10
-- update package-lock.json
-- bump @react-navigation/bottom-tabs from 7.18.17 to 7.18.18
-- bump react-native from 0.87.0 to 0.87.1
-- bump @react-navigation/native from 7.3.17 to 7.3.18
-- bump react-native-reanimated from 4.5.3 to 4.6.0
+- bump expo from 57.0.18 to 57.0.19
 
 ## [1.0.0] - initial
 
