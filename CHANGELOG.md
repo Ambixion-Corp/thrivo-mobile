@@ -14,9 +14,8 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- bump babel-preset-expo from 57.0.9 to 57.0.10
-- bump @expo/metro-runtime from 57.0.14 to 57.0.15
-- bump expo from 57.0.18 to 57.0.19
+- bump expo from 57.0.19 to 57.0.23
+- bump @expo/metro-runtime from 57.0.15 to 58.0.3
 
 ## [1.0.0] - initial
 
