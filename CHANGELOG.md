@@ -14,9 +14,14 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- bump babel-preset-expo from 57.0.9 to 57.0.10
-- bump @expo/metro-runtime from 57.0.14 to 57.0.15
-- bump expo from 57.0.18 to 57.0.19
+- bump react and @types/react
+- bump nativewind from 4.2.6 to 4.2.7
+- bump @react-navigation/bottom-tabs from 7.18.18 to 7.19.2
+- bump @tanstack/react-query from 5.102.8 to 5.103.1
+- bump expo from 57.0.19 to 57.0.23
+- bump @expo/metro-runtime from 57.0.15 to 58.0.3
+- bump react-native-gesture-handler from 3.2.1 to 3.3.0
+- bump @react-navigation/native from 7.3.18 to 7.4.1
 
 ## [1.0.0] - initial
 
