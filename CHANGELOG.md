@@ -14,18 +14,15 @@ request is opened on every merge to update it (see
 
 ### Changed
 
-- update package-lock.json
-- bump @react-navigation/native-stack from 7.18.10 to 7.19.2
-- bump react-native-screens from 4.27.0 to 4.28.0
-- update package-lock.json
-- bump @expo/metro-runtime from 58.0.3 to 58.0.6
-- bump expo from 57.0.23 to 57.0.25
-- bump react-native-safe-area-context from 5.9.1 to 5.10.0
-- update package-lock.json
-- bump babel-preset-expo from 57.0.12 to 57.0.13
-- update package-lock.json
-- bump react-native-reanimated from 4.6.0 to 4.7.0
-- bump @tanstack/react-query from 5.103.1 to 5.103.2
+- bump @react-navigation/native-stack from 7.19.2 to 7.21.0 ([#127](https://github.com/Ambixion-Corp/thrivo-mobile/pull/127))
+- bump @react-navigation/bottom-tabs from 7.19.2 to 7.21.0 ([#125](https://github.com/Ambixion-Corp/thrivo-mobile/pull/125))
+- bump @tanstack/react-query from 5.103.2 to 5.104.3 ([#134](https://github.com/Ambixion-Corp/thrivo-mobile/pull/134))
+- bump react-native-reanimated from 4.7.0 to 4.7.1 ([#131](https://github.com/Ambixion-Corp/thrivo-mobile/pull/131))
+- bump @expo/metro-runtime from 58.0.6 to 58.0.14 ([#135](https://github.com/Ambixion-Corp/thrivo-mobile/pull/135))
+- bump babel-preset-expo from 57.0.13 to 57.0.14 ([#132](https://github.com/Ambixion-Corp/thrivo-mobile/pull/132))
+- bump react-native-safe-area-context from 5.10.0 to 5.10.1 ([#130](https://github.com/Ambixion-Corp/thrivo-mobile/pull/130))
+- bump react-native-web from 0.21.2 to 0.21.3 ([#128](https://github.com/Ambixion-Corp/thrivo-mobile/pull/128))
+- bump @react-navigation/native from 7.4.1 to 7.5.0 ([#123](https://github.com/Ambixion-Corp/thrivo-mobile/pull/123))
 
 ## [1.0.0] - initial
 
