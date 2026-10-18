@@ -22,7 +22,7 @@
     "react-native-reanimated": "4.7.0",
     "react-native-safe-area-context": "~5.10.0",
     "react-native-screens": "4.28.0",
-    "react-native-web": "^0.21.2",
+    "react-native-web": "^0.21.3",
     "tailwindcss": "^3.4.19",
     "zustand": "^5.0.15"
   },
