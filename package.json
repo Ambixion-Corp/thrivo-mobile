@@ -24,7 +24,7 @@
     "react-native-screens": "4.30.0",
     "react-native-web": "^0.21.4",
     "tailwindcss": "^3.4.19",
-    "zustand": "^5.0.15"
+    "zustand": "^5.0.16"
   },
   "devDependencies": {
     "@expo/ngrok": "^4.1.3",
